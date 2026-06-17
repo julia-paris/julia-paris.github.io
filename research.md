@@ -7,7 +7,7 @@ description: Research and policy writing by Julia Paris.
 
 ## Publications
 
-<ol class="ref-list" reversed>
+<ol class="ref-list">
   <li>
     <a class="ref-title" href="https://doi.org/10.1176/appi.ps.20230037">Investing in Certified Community Behavioral Health Clinics to Fulfill Their Promise</a>
     (with Richard G. Frank).
@@ -17,7 +17,7 @@ description: Research and policy writing by Julia Paris.
 
 ## Reports &amp; Short Articles
 
-<ol class="ref-list" reversed>
+<ol class="ref-list">
   <li>
     <a class="ref-title" href="https://www.brookings.edu/articles/how-precise-are-the-estimates-of-traditional-medicare-costs-used-to-set-medicare-advantage-benchmarks/">How Precise Are the Estimates of Traditional Medicare Costs Used to Set Medicare Advantage Benchmarks?</a>
     (with Samantha Crow and Matthew Fiedler).

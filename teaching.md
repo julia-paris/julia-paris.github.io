@@ -5,6 +5,19 @@ permalink: /teaching/
 description: Courses taught by Julia Paris as a Graduate Student Instructor and Teaching Assistant.
 ---
 
+## Awards
+
+<ul class="teach-list">
+  <li>
+    <span class="teach-course"><a href="https://gsi.berkeley.edu/programs-services/award-programs/teaching-effectiveness/">Teaching Effectiveness Award</a></span>
+    <span class="teach-meta">2026 · UC Berkeley</span>
+  </li>
+  <li>
+    <span class="teach-course"><a href="https://gsi.berkeley.edu/programs-services/award-programs/ogsi/">Outstanding Graduate Student Instructor Award</a></span>
+    <span class="teach-meta">2026 · UC Berkeley (ECON 130)</span>
+  </li>
+</ul>
+
 ## University of California, Berkeley
 
 <ul class="teach-list">
