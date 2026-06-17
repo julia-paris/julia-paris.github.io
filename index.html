@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<div class="home">
+  <div class="home-top">
+    <img class="home-photo" src="/images/headshot-web.jpg" alt="Julia Paris">
+    <div class="home-intro">
+      <header class="home-header">
+        <h1 class="home-name">Julia Paris</h1>
+        <p class="home-tagline">Ph.D. Student in Economics · University of California, Berkeley</p>
+      </header>
+    </div>
+  </div>
+
+  <section class="home-bio">
+    <p>
+      I am a Ph.D. student in Economics at the University of California, Berkeley.
+      Before starting graduate school, I was a research assistant at the Brookings
+      Institution's Center on Health Policy. I hold a B.A. in Economics and an M.A.
+      in Public Policy from Stanford University. I am a 2025 RWJF Health Policy
+      Research Scholar.
+    </p>
+  </section>
+
+  <section class="home-contact">
+    <ul class="contact-list">
+      <li><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+      <li><a href="{{ site.author.cv }}">CV (PDF)</a></li>
+      {% if site.author.googlescholar %}<li><a href="{{ site.author.googlescholar }}">Google Scholar</a></li>{% endif %}
+      {% if site.author.linkedin %}<li><a href="{{ site.author.linkedin }}">LinkedIn</a></li>{% endif %}
+      {% if site.author.github %}<li><a href="{{ site.author.github }}">GitHub</a></li>{% endif %}
+    </ul>
+    <!-- To add Google Scholar / LinkedIn / GitHub links, fill them in under `author:` in _config.yml -->
+  </section>
+</div>

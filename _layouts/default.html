@@ -1,31 +1,61 @@
----
-layout: compress
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }} · {{ site.tagline }}{% endif %}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="author" content="{{ site.author.name }}">
 
-{% include base_path %}
+  <link rel="icon" href="/images/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon-180x180.png">
 
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <body>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
 
-    {{ content }}
-
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
+  <nav class="navbar navbar-expand-md site-nav">
+    <div class="container">
+      <a class="navbar-brand" href="/">{{ site.title }}</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="nav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link {% if page.url contains '/research' %}active{% endif %}" href="/research/">Research</a></li>
+          <li class="nav-item"><a class="nav-link {% if page.url contains '/teaching' %}active{% endif %}" href="/teaching/">Teaching</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ site.author.cv }}">CV</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    {% include scripts.html %}
+  <main class="container site-main">
+    {{ content }}
+  </main>
 
-  </body>
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        &copy; {{ site.author.name }} ·
+        <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+      </p>
+      <p class="footer-credit">
+        Built with <a href="https://jekyllrb.com/">Jekyll</a> and hosted on GitHub Pages.
+        Design adapted from <a href="https://github.com/jmcglone/jmcglone.github.io">Jonathan McGlone</a>.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
